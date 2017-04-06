@@ -110,6 +110,7 @@
             this.mtnSearchByTeam.Name = "mtnSearchByTeam";
             this.mtnSearchByTeam.Size = new System.Drawing.Size(246, 30);
             this.mtnSearchByTeam.Text = "Search by Team";
+            this.mtnSearchByTeam.Click += new System.EventHandler(this.mtnSearchByTeam_Click);
             // 
             // mtnSearchByDate
             // 
@@ -166,6 +167,7 @@
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Mainform
             // 

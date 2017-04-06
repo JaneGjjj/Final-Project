@@ -16,5 +16,10 @@ namespace Final_Project
         {
             InitializeComponent();
         }
+
+        private void SearchByTeamForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

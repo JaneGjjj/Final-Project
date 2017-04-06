@@ -104,6 +104,7 @@
             this.Controls.Add(this.btnSearch);
             this.Name = "SearchByTeamForm";
             this.Text = "Search Game By Team";
+            this.Load += new System.EventHandler(this.SearchByTeamForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeamGame)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

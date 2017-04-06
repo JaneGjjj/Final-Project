@@ -10,3 +10,7 @@ C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final Proje
 C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final_Project.SearchByTeamForm.resources
 C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final_Project.SearchByDate.resources
 C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final_Project.SearchByLocation.resources
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final_Project.AboutForm.resources
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final_Project.SupportRate.resources
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final_Project.VoteForChampion.resources
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final_Project.VoteForTeam.resources
