@@ -33,14 +33,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.getGamesInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchByTeamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchByDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchByLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtnInformation = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtnSearchByTeam = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtnSearchByDate = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtnSearchByLocation = new System.Windows.Forms.ToolStripMenuItem();
             this.makeYourPredictionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voteForYourTeamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.voteForFinalPhraseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seeYourTeamsSupportRateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.voteForFinalPhraseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,7 +51,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(676, 93);
+            this.pictureBox1.Location = new System.Drawing.Point(713, 93);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(290, 366);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -86,42 +86,42 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.getGamesInformationToolStripMenuItem,
+            this.mtnInformation,
             this.makeYourPredictionToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1006, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1034, 33);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // getGamesInformationToolStripMenuItem
+            // mtnInformation
             // 
-            this.getGamesInformationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.searchByTeamToolStripMenuItem,
-            this.searchByDateToolStripMenuItem,
-            this.searchByLocationToolStripMenuItem});
-            this.getGamesInformationToolStripMenuItem.Name = "getGamesInformationToolStripMenuItem";
-            this.getGamesInformationToolStripMenuItem.Size = new System.Drawing.Size(213, 29);
-            this.getGamesInformationToolStripMenuItem.Text = "Get Game\'s Information";
+            this.mtnInformation.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mtnSearchByTeam,
+            this.mtnSearchByDate,
+            this.mtnSearchByLocation});
+            this.mtnInformation.Name = "mtnInformation";
+            this.mtnInformation.Size = new System.Drawing.Size(213, 29);
+            this.mtnInformation.Text = "Get Game\'s Information";
             // 
-            // searchByTeamToolStripMenuItem
+            // mtnSearchByTeam
             // 
-            this.searchByTeamToolStripMenuItem.Name = "searchByTeamToolStripMenuItem";
-            this.searchByTeamToolStripMenuItem.Size = new System.Drawing.Size(246, 30);
-            this.searchByTeamToolStripMenuItem.Text = "Search by Team";
+            this.mtnSearchByTeam.Name = "mtnSearchByTeam";
+            this.mtnSearchByTeam.Size = new System.Drawing.Size(246, 30);
+            this.mtnSearchByTeam.Text = "Search by Team";
             // 
-            // searchByDateToolStripMenuItem
+            // mtnSearchByDate
             // 
-            this.searchByDateToolStripMenuItem.Name = "searchByDateToolStripMenuItem";
-            this.searchByDateToolStripMenuItem.Size = new System.Drawing.Size(246, 30);
-            this.searchByDateToolStripMenuItem.Text = "Search by Date";
+            this.mtnSearchByDate.Name = "mtnSearchByDate";
+            this.mtnSearchByDate.Size = new System.Drawing.Size(246, 30);
+            this.mtnSearchByDate.Text = "Search by Date";
             // 
-            // searchByLocationToolStripMenuItem
+            // mtnSearchByLocation
             // 
-            this.searchByLocationToolStripMenuItem.Name = "searchByLocationToolStripMenuItem";
-            this.searchByLocationToolStripMenuItem.Size = new System.Drawing.Size(246, 30);
-            this.searchByLocationToolStripMenuItem.Text = "Search by Location";
+            this.mtnSearchByLocation.Name = "mtnSearchByLocation";
+            this.mtnSearchByLocation.Size = new System.Drawing.Size(246, 30);
+            this.mtnSearchByLocation.Text = "Search by Location";
             // 
             // makeYourPredictionToolStripMenuItem
             // 
@@ -139,17 +139,17 @@
             this.voteForYourTeamToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
             this.voteForYourTeamToolStripMenuItem.Text = "Vote For Your Team";
             // 
-            // voteForFinalPhraseToolStripMenuItem
-            // 
-            this.voteForFinalPhraseToolStripMenuItem.Name = "voteForFinalPhraseToolStripMenuItem";
-            this.voteForFinalPhraseToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
-            this.voteForFinalPhraseToolStripMenuItem.Text = "Vote For Final Phrase";
-            // 
             // seeYourTeamsSupportRateToolStripMenuItem
             // 
             this.seeYourTeamsSupportRateToolStripMenuItem.Name = "seeYourTeamsSupportRateToolStripMenuItem";
             this.seeYourTeamsSupportRateToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
             this.seeYourTeamsSupportRateToolStripMenuItem.Text = "See Your Team\'s Support Rate";
+            // 
+            // voteForFinalPhraseToolStripMenuItem
+            // 
+            this.voteForFinalPhraseToolStripMenuItem.Name = "voteForFinalPhraseToolStripMenuItem";
+            this.voteForFinalPhraseToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.voteForFinalPhraseToolStripMenuItem.Text = "Vote For Final Phrase";
             // 
             // exitToolStripMenuItem
             // 
@@ -160,9 +160,9 @@
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(404, 496);
+            this.btnExit.Location = new System.Drawing.Point(411, 500);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(246, 33);
+            this.btnExit.Size = new System.Drawing.Size(246, 39);
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -171,7 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 547);
+            this.ClientSize = new System.Drawing.Size(1034, 563);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
@@ -196,10 +196,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem getGamesInformationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchByTeamToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchByDateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchByLocationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mtnInformation;
+        private System.Windows.Forms.ToolStripMenuItem mtnSearchByTeam;
+        private System.Windows.Forms.ToolStripMenuItem mtnSearchByDate;
+        private System.Windows.Forms.ToolStripMenuItem mtnSearchByLocation;
         private System.Windows.Forms.ToolStripMenuItem makeYourPredictionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem voteForYourTeamToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seeYourTeamsSupportRateToolStripMenuItem;

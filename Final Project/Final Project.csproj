@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,45 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchByDate.Designer.cs">
+      <DependentUpon>SearchByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchByLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchByLocation.Designer.cs">
+      <DependentUpon>SearchByLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchByTeamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchByTeamForm.Designer.cs">
+      <DependentUpon>SearchByTeamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupportRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupportRate.Designer.cs">
+      <DependentUpon>SupportRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoteForChampion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoteForChampion.Designer.cs">
+      <DependentUpon>VoteForChampion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoteForTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoteForTeam.Designer.cs">
+      <DependentUpon>VoteForTeam.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +111,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SearchByDate.resx">
+      <DependentUpon>SearchByDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchByLocation.resx">
+      <DependentUpon>SearchByLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchByTeamForm.resx">
+      <DependentUpon>SearchByTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupportRate.resx">
+      <DependentUpon>SupportRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoteForChampion.resx">
+      <DependentUpon>VoteForChampion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoteForTeam.resx">
+      <DependentUpon>VoteForTeam.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
