@@ -1,1 +1,9 @@
 C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\bin\Debug\Final Project.exe.config
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\bin\Debug\Final Project.exe
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\bin\Debug\Final Project.pdb
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final Project.csprojResolveAssemblyReference.cache
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final_Project.Mainform.resources
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final_Project.Properties.Resources.resources
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final Project.csproj.GenerateResource.Cache
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final Project.exe
+C:\Users\jguo_\Desktop\vb-jing\Final Project\Final Project\obj\Debug\Final Project.pdb

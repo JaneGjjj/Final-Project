@@ -1,6 +1,6 @@
 ﻿namespace Final_Project
 {
-    partial class Form1
+    partial class Mainform
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,184 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainform));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.getGamesInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchByTeamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchByDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchByLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.makeYourPredictionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.voteForYourTeamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.voteForFinalPhraseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seeYourTeamsSupportRateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnExit = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Form1
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(676, 93);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(290, 366);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(48, 93);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(593, 220);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Location = new System.Drawing.Point(23, 355);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(647, 104);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Hello everyone!!!\r\nDo you want to predict the champion for World Cup 2018?\r\nDo yo" +
+    "u want to know the game timetable in details?\r\nThere is the right place for you!" +
+    "!! Enjoy!!!\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.getGamesInformationToolStripMenuItem,
+            this.makeYourPredictionToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1006, 33);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // getGamesInformationToolStripMenuItem
+            // 
+            this.getGamesInformationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.searchByTeamToolStripMenuItem,
+            this.searchByDateToolStripMenuItem,
+            this.searchByLocationToolStripMenuItem});
+            this.getGamesInformationToolStripMenuItem.Name = "getGamesInformationToolStripMenuItem";
+            this.getGamesInformationToolStripMenuItem.Size = new System.Drawing.Size(213, 29);
+            this.getGamesInformationToolStripMenuItem.Text = "Get Game\'s Information";
+            // 
+            // searchByTeamToolStripMenuItem
+            // 
+            this.searchByTeamToolStripMenuItem.Name = "searchByTeamToolStripMenuItem";
+            this.searchByTeamToolStripMenuItem.Size = new System.Drawing.Size(246, 30);
+            this.searchByTeamToolStripMenuItem.Text = "Search by Team";
+            // 
+            // searchByDateToolStripMenuItem
+            // 
+            this.searchByDateToolStripMenuItem.Name = "searchByDateToolStripMenuItem";
+            this.searchByDateToolStripMenuItem.Size = new System.Drawing.Size(246, 30);
+            this.searchByDateToolStripMenuItem.Text = "Search by Date";
+            // 
+            // searchByLocationToolStripMenuItem
+            // 
+            this.searchByLocationToolStripMenuItem.Name = "searchByLocationToolStripMenuItem";
+            this.searchByLocationToolStripMenuItem.Size = new System.Drawing.Size(246, 30);
+            this.searchByLocationToolStripMenuItem.Text = "Search by Location";
+            // 
+            // makeYourPredictionToolStripMenuItem
+            // 
+            this.makeYourPredictionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.voteForYourTeamToolStripMenuItem,
+            this.seeYourTeamsSupportRateToolStripMenuItem,
+            this.voteForFinalPhraseToolStripMenuItem});
+            this.makeYourPredictionToolStripMenuItem.Name = "makeYourPredictionToolStripMenuItem";
+            this.makeYourPredictionToolStripMenuItem.Size = new System.Drawing.Size(191, 29);
+            this.makeYourPredictionToolStripMenuItem.Text = "Make Your Prediction";
+            // 
+            // voteForYourTeamToolStripMenuItem
+            // 
+            this.voteForYourTeamToolStripMenuItem.Name = "voteForYourTeamToolStripMenuItem";
+            this.voteForYourTeamToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.voteForYourTeamToolStripMenuItem.Text = "Vote For Your Team";
+            // 
+            // voteForFinalPhraseToolStripMenuItem
+            // 
+            this.voteForFinalPhraseToolStripMenuItem.Name = "voteForFinalPhraseToolStripMenuItem";
+            this.voteForFinalPhraseToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.voteForFinalPhraseToolStripMenuItem.Text = "Vote For Final Phrase";
+            // 
+            // seeYourTeamsSupportRateToolStripMenuItem
+            // 
+            this.seeYourTeamsSupportRateToolStripMenuItem.Name = "seeYourTeamsSupportRateToolStripMenuItem";
+            this.seeYourTeamsSupportRateToolStripMenuItem.Size = new System.Drawing.Size(333, 30);
+            this.seeYourTeamsSupportRateToolStripMenuItem.Text = "See Your Team\'s Support Rate";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(209, 29);
+            this.exitToolStripMenuItem.Text = "About World Cup 2018";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(404, 496);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(246, 33);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
+            // Mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 338);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1006, 547);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Mainform";
+            this.Text = "World Cup 2018";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem getGamesInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchByTeamToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchByDateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchByLocationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem makeYourPredictionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem voteForYourTeamToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seeYourTeamsSupportRateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem voteForFinalPhraseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
