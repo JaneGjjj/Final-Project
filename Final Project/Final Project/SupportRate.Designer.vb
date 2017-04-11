@@ -29,7 +29,7 @@ Partial Class SupportRate
         '
         Me.btnBack.Location = New System.Drawing.Point(550, 448)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(215, 34)
+        Me.btnBack.Size = New System.Drawing.Size(215, 42)
         Me.btnBack.TabIndex = 1
         Me.btnBack.Text = "Back To HomePage"
         Me.btnBack.UseVisualStyleBackColor = True

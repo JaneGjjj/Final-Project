@@ -62,7 +62,7 @@ Partial Class SearchByTeam
         '
         Me.btnClose.Location = New System.Drawing.Point(641, 480)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(174, 30)
+        Me.btnClose.Size = New System.Drawing.Size(174, 42)
         Me.btnClose.TabIndex = 8
         Me.btnClose.Text = "Back To HomePage"
         Me.btnClose.UseVisualStyleBackColor = True
@@ -71,7 +71,7 @@ Partial Class SearchByTeam
         '
         Me.btnClear.Location = New System.Drawing.Point(255, 479)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(117, 31)
+        Me.btnClear.Size = New System.Drawing.Size(117, 43)
         Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
@@ -80,7 +80,7 @@ Partial Class SearchByTeam
         '
         Me.btnSearch.Location = New System.Drawing.Point(91, 479)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(112, 31)
+        Me.btnSearch.Size = New System.Drawing.Size(112, 43)
         Me.btnSearch.TabIndex = 6
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True

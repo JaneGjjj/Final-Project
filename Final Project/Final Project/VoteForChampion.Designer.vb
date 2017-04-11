@@ -26,7 +26,7 @@ Partial Class VoteForChampion
         Me.chk1 = New System.Windows.Forms.CheckBox()
         Me.label2 = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
-        Me.button2 = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.button1 = New System.Windows.Forms.Button()
         Me.btnVote = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -69,20 +69,20 @@ Partial Class VoteForChampion
         Me.label1.TabIndex = 10
         Me.label1.Text = "Team 1"
         '
-        'button2
+        'btnClear
         '
-        Me.button2.Location = New System.Drawing.Point(55, 389)
-        Me.button2.Name = "button2"
-        Me.button2.Size = New System.Drawing.Size(143, 29)
-        Me.button2.TabIndex = 9
-        Me.button2.Text = "Change my mind"
-        Me.button2.UseVisualStyleBackColor = True
+        Me.btnClear.Location = New System.Drawing.Point(55, 389)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(143, 29)
+        Me.btnClear.TabIndex = 9
+        Me.btnClear.Text = "Change my mind"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
         'button1
         '
-        Me.button1.Location = New System.Drawing.Point(469, 389)
+        Me.button1.Location = New System.Drawing.Point(469, 377)
         Me.button1.Name = "button1"
-        Me.button1.Size = New System.Drawing.Size(171, 28)
+        Me.button1.Size = New System.Drawing.Size(171, 40)
         Me.button1.TabIndex = 8
         Me.button1.Text = "Back To HomePage"
         Me.button1.UseVisualStyleBackColor = True
@@ -105,7 +105,7 @@ Partial Class VoteForChampion
         Me.Controls.Add(Me.chk1)
         Me.Controls.Add(Me.label2)
         Me.Controls.Add(Me.label1)
-        Me.Controls.Add(Me.button2)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.button1)
         Me.Controls.Add(Me.btnVote)
         Me.Name = "VoteForChampion"
@@ -119,7 +119,7 @@ Partial Class VoteForChampion
     Private WithEvents chk1 As CheckBox
     Private WithEvents label2 As Label
     Private WithEvents label1 As Label
-    Private WithEvents button2 As Button
+    Private WithEvents btnClear As Button
     Private WithEvents button1 As Button
     Private WithEvents btnVote As Button
 End Class

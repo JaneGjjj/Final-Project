@@ -31,9 +31,9 @@ Partial Class VoteForTeam
         '
         'btnSupportRate
         '
-        Me.btnSupportRate.Location = New System.Drawing.Point(520, 445)
+        Me.btnSupportRate.Location = New System.Drawing.Point(520, 433)
         Me.btnSupportRate.Name = "btnSupportRate"
-        Me.btnSupportRate.Size = New System.Drawing.Size(198, 26)
+        Me.btnSupportRate.Size = New System.Drawing.Size(198, 38)
         Me.btnSupportRate.TabIndex = 9
         Me.btnSupportRate.Text = "Show me Support Rate"
         Me.btnSupportRate.UseVisualStyleBackColor = True
@@ -42,7 +42,7 @@ Partial Class VoteForTeam
         '
         Me.btnBack.Location = New System.Drawing.Point(520, 491)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(198, 28)
+        Me.btnBack.Size = New System.Drawing.Size(198, 43)
         Me.btnBack.TabIndex = 8
         Me.btnBack.Text = "Back To HomePage"
         Me.btnBack.UseVisualStyleBackColor = True
@@ -51,16 +51,16 @@ Partial Class VoteForTeam
         '
         Me.btnClear.Location = New System.Drawing.Point(92, 492)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(112, 27)
+        Me.btnClear.Size = New System.Drawing.Size(112, 42)
         Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "Reset"
         Me.btnClear.UseVisualStyleBackColor = True
         '
         'btnVote
         '
-        Me.btnVote.Location = New System.Drawing.Point(92, 443)
+        Me.btnVote.Location = New System.Drawing.Point(92, 433)
         Me.btnVote.Name = "btnVote"
-        Me.btnVote.Size = New System.Drawing.Size(112, 28)
+        Me.btnVote.Size = New System.Drawing.Size(112, 38)
         Me.btnVote.TabIndex = 6
         Me.btnVote.Text = "Vote"
         Me.btnVote.UseVisualStyleBackColor = True
@@ -69,7 +69,7 @@ Partial Class VoteForTeam
         '
         Me.btnAll.Location = New System.Drawing.Point(282, 22)
         Me.btnAll.Name = "btnAll"
-        Me.btnAll.Size = New System.Drawing.Size(169, 29)
+        Me.btnAll.Size = New System.Drawing.Size(169, 39)
         Me.btnAll.TabIndex = 5
         Me.btnAll.Text = "Show me ALL teams"
         Me.btnAll.UseVisualStyleBackColor = True

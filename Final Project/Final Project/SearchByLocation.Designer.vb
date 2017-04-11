@@ -35,7 +35,7 @@ Partial Class SearchByLocation
         '
         Me.btnBack.Location = New System.Drawing.Point(448, 374)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(170, 28)
+        Me.btnBack.Size = New System.Drawing.Size(170, 46)
         Me.btnBack.TabIndex = 11
         Me.btnBack.Text = "Back To HomePage"
         Me.btnBack.UseVisualStyleBackColor = True
@@ -44,7 +44,7 @@ Partial Class SearchByLocation
         '
         Me.btnClear.Location = New System.Drawing.Point(221, 374)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(108, 28)
+        Me.btnClear.Size = New System.Drawing.Size(108, 46)
         Me.btnClear.TabIndex = 10
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
@@ -53,7 +53,7 @@ Partial Class SearchByLocation
         '
         Me.btnSearch.Location = New System.Drawing.Point(76, 374)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(125, 29)
+        Me.btnSearch.Size = New System.Drawing.Size(125, 46)
         Me.btnSearch.TabIndex = 9
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True
@@ -83,7 +83,7 @@ Partial Class SearchByLocation
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(213, 20)
         Me.label1.TabIndex = 6
-        Me.label1.Text = "Choose One Sports Cneter : "
+        Me.label1.Text = "Choose One Sports Center : "
         '
         'SearchByLocation
         '
