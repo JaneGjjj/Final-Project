@@ -37,6 +37,7 @@ Partial Class frmMain
         Me.seeYourTeamsSupportRateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.voteForFinalPhraseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.exitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.menuStrip1.SuspendLayout()
@@ -89,7 +90,7 @@ Partial Class frmMain
         'menuStrip1
         '
         Me.menuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.menuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mtnInformation, Me.makeYourPredictionToolStripMenuItem, Me.exitToolStripMenuItem})
+        Me.menuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mtnInformation, Me.ToolStripMenuItem1, Me.exitToolStripMenuItem, Me.makeYourPredictionToolStripMenuItem})
         Me.menuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.menuStrip1.Name = "menuStrip1"
         Me.menuStrip1.Size = New System.Drawing.Size(1003, 33)
@@ -152,6 +153,12 @@ Partial Class frmMain
         Me.exitToolStripMenuItem.Size = New System.Drawing.Size(209, 29)
         Me.exitToolStripMenuItem.Text = "About World Cup 2018"
         '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(208, 29)
+        Me.ToolStripMenuItem1.Text = "Add Game Information"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -187,4 +194,5 @@ Partial Class frmMain
     Private WithEvents seeYourTeamsSupportRateToolStripMenuItem As ToolStripMenuItem
     Private WithEvents voteForFinalPhraseToolStripMenuItem As ToolStripMenuItem
     Private WithEvents exitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
 End Class

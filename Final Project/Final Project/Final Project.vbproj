@@ -78,6 +78,12 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddGame.Designer.vb">
+      <DependentUpon>AddGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
   <ItemGroup>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGame.resx">
+      <DependentUpon>AddGame.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
