@@ -123,6 +123,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GameInformationDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Location.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

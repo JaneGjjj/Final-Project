@@ -28,6 +28,7 @@ Partial Class SearchByDate
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.lblStatus = New System.Windows.Forms.Label()
         CType(Me.dgvGamesInDay, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -58,7 +59,7 @@ Partial Class SearchByDate
         '
         'btnSearch
         '
-        Me.btnSearch.Location = New System.Drawing.Point(41, 431)
+        Me.btnSearch.Location = New System.Drawing.Point(34, 467)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(144, 29)
         Me.btnSearch.TabIndex = 4
@@ -67,7 +68,7 @@ Partial Class SearchByDate
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(200, 431)
+        Me.btnClear.Location = New System.Drawing.Point(184, 467)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(133, 29)
         Me.btnClear.TabIndex = 5
@@ -76,18 +77,26 @@ Partial Class SearchByDate
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(499, 431)
+        Me.btnBack.Location = New System.Drawing.Point(500, 467)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(172, 29)
         Me.btnBack.TabIndex = 6
         Me.btnBack.Text = "Back To HomePage"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'lblStatus
+        '
+        Me.lblStatus.Location = New System.Drawing.Point(62, 419)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(597, 33)
+        Me.lblStatus.TabIndex = 7
+        '
         'SearchByDate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(709, 535)
+        Me.Controls.Add(Me.lblStatus)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnSearch)
@@ -108,4 +117,5 @@ Partial Class SearchByDate
     Private WithEvents btnSearch As Button
     Private WithEvents btnClear As Button
     Private WithEvents btnBack As Button
+    Friend WithEvents lblStatus As Label
 End Class

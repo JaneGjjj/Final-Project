@@ -46,6 +46,7 @@ Partial Class AddGame
         Me.txt2 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.lblStatus = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -252,11 +253,19 @@ Partial Class AddGame
         Me.Label10.TabIndex = 23
         Me.Label10.Text = "(Type score above)"
         '
+        'lblStatus
+        '
+        Me.lblStatus.Location = New System.Drawing.Point(77, 528)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(777, 28)
+        Me.lblStatus.TabIndex = 24
+        '
         'AddGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(928, 645)
+        Me.Controls.Add(Me.lblStatus)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.txt2)
@@ -312,4 +321,5 @@ Partial Class AddGame
     Friend WithEvents txt2 As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents lblStatus As Label
 End Class
