@@ -4,6 +4,7 @@
     End Sub
 
     Private Sub SearchByTeam_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         cboTeam.SelectedIndex = -1
     End Sub
 

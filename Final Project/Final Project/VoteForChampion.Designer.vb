@@ -24,8 +24,8 @@ Partial Class VoteForChampion
     Private Sub InitializeComponent()
         Me.chk2 = New System.Windows.Forms.CheckBox()
         Me.chk1 = New System.Windows.Forms.CheckBox()
-        Me.label2 = New System.Windows.Forms.Label()
-        Me.label1 = New System.Windows.Forms.Label()
+        Me.lbl2 = New System.Windows.Forms.Label()
+        Me.lbl1 = New System.Windows.Forms.Label()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.button1 = New System.Windows.Forms.Button()
         Me.btnVote = New System.Windows.Forms.Button()
@@ -51,23 +51,23 @@ Partial Class VoteForChampion
         Me.chk1.Text = "Team 1 will be champion"
         Me.chk1.UseVisualStyleBackColor = True
         '
-        'label2
+        'lbl2
         '
-        Me.label2.AutoSize = True
-        Me.label2.Location = New System.Drawing.Point(479, 87)
-        Me.label2.Name = "label2"
-        Me.label2.Size = New System.Drawing.Size(62, 20)
-        Me.label2.TabIndex = 11
-        Me.label2.Text = "Team 2"
+        Me.lbl2.AutoSize = True
+        Me.lbl2.Location = New System.Drawing.Point(479, 87)
+        Me.lbl2.Name = "lbl2"
+        Me.lbl2.Size = New System.Drawing.Size(62, 20)
+        Me.lbl2.TabIndex = 11
+        Me.lbl2.Text = "Team 2"
         '
-        'label1
+        'lbl1
         '
-        Me.label1.AutoSize = True
-        Me.label1.Location = New System.Drawing.Point(119, 87)
-        Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(62, 20)
-        Me.label1.TabIndex = 10
-        Me.label1.Text = "Team 1"
+        Me.lbl1.AutoSize = True
+        Me.lbl1.Location = New System.Drawing.Point(119, 87)
+        Me.lbl1.Name = "lbl1"
+        Me.lbl1.Size = New System.Drawing.Size(62, 20)
+        Me.lbl1.TabIndex = 10
+        Me.lbl1.Text = "Team 1"
         '
         'btnClear
         '
@@ -103,8 +103,8 @@ Partial Class VoteForChampion
         Me.ClientSize = New System.Drawing.Size(681, 468)
         Me.Controls.Add(Me.chk2)
         Me.Controls.Add(Me.chk1)
-        Me.Controls.Add(Me.label2)
-        Me.Controls.Add(Me.label1)
+        Me.Controls.Add(Me.lbl2)
+        Me.Controls.Add(Me.lbl1)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.button1)
         Me.Controls.Add(Me.btnVote)
@@ -117,8 +117,8 @@ Partial Class VoteForChampion
 
     Private WithEvents chk2 As CheckBox
     Private WithEvents chk1 As CheckBox
-    Private WithEvents label2 As Label
-    Private WithEvents label1 As Label
+    Private WithEvents lbl2 As Label
+    Private WithEvents lbl1 As Label
     Private WithEvents btnClear As Button
     Private WithEvents button1 As Button
     Private WithEvents btnVote As Button
