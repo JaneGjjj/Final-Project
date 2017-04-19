@@ -22,6 +22,7 @@ Partial Class AddGame
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -47,6 +48,11 @@ Partial Class AddGame
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.lblStatus = New System.Windows.Forms.Label()
+        Me.GameInformationDataSet = New Final_Project.GameInformationDataSet()
+        Me.GameBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GameTableAdapter = New Final_Project.GameInformationDataSetTableAdapters.GameTableAdapter()
+        CType(Me.GameInformationDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GameBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -104,11 +110,14 @@ Partial Class AddGame
         '
         'cboTeam1
         '
+        Me.cboTeam1.DataSource = Me.GameBindingSource
+        Me.cboTeam1.DisplayMember = "Team 1"
         Me.cboTeam1.FormattingEnabled = True
         Me.cboTeam1.Location = New System.Drawing.Point(162, 152)
         Me.cboTeam1.Name = "cboTeam1"
         Me.cboTeam1.Size = New System.Drawing.Size(172, 28)
         Me.cboTeam1.TabIndex = 6
+        Me.cboTeam1.ValueMember = "Date"
         '
         'cboTeam2
         '
@@ -260,6 +269,20 @@ Partial Class AddGame
         Me.lblStatus.Size = New System.Drawing.Size(777, 28)
         Me.lblStatus.TabIndex = 24
         '
+        'GameInformationDataSet
+        '
+        Me.GameInformationDataSet.DataSetName = "GameInformationDataSet"
+        Me.GameInformationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'GameBindingSource
+        '
+        Me.GameBindingSource.DataMember = "Game"
+        Me.GameBindingSource.DataSource = Me.GameInformationDataSet
+        '
+        'GameTableAdapter
+        '
+        Me.GameTableAdapter.ClearBeforeFill = True
+        '
         'AddGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -292,6 +315,8 @@ Partial Class AddGame
         Me.Controls.Add(Me.Label1)
         Me.Name = "AddGame"
         Me.Text = "Add New Game"
+        CType(Me.GameInformationDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GameBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -322,4 +347,7 @@ Partial Class AddGame
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents lblStatus As Label
+    Friend WithEvents GameInformationDataSet As GameInformationDataSet
+    Friend WithEvents GameBindingSource As BindingSource
+    Friend WithEvents GameTableAdapter As GameInformationDataSetTableAdapters.GameTableAdapter
 End Class
