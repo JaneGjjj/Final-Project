@@ -2,6 +2,7 @@
 
     Private mGame As New Game
     Private mLocation As New Location
+    Private mTeam As New Teams
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
@@ -16,6 +17,11 @@
         cboPlace.ValueMember = "Location"
 
 
+        cboTeam1.DataSource = mTeam.Items
+        cboTeam1.DisplayMember = "TeamName"
+
+        cboTeam2.DataSource = mTeam.Items
+        cboTeam2.DisplayMember = "TeamName"
 
     End Sub
 End Class
