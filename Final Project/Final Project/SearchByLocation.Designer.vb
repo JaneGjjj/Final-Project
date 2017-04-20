@@ -202,18 +202,7 @@ Partial Class SearchByLocation
         '
         'NewGameInformationDataSet
         '
-        Me.NewGameInformationDataSet.DataSetName = "NewGameInformationDataSet"
-        Me.NewGameInformationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'GameTableAdapter1
-        '
-        Me.GameTableAdapter1.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.GameTableAdapter = Me.GameTableAdapter1
-        Me.TableAdapterManager.UpdateOrder = Final_Project.NewGameInformationDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+
         '
         'SearchByLocation
         '
