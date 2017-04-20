@@ -11,7 +11,7 @@
         End Get
     End Property
 
-    Public Function Insert(ByVal GameDate As DateTime,
+    Public Function Insert(ByVal GameDate As Date,
                         ByVal Location As String, ByVal Team1 As String,
                         ByVal Team1Best As Integer, ByVal Team2 As String,
                         ByVal Team2Best As Integer, ByVal History As String,
@@ -29,6 +29,14 @@
         End Try
 
 
+    End Function
+
+
+    Public Function GetbyDate(ByVal GameDate As Date) As DataTable
+        Dim table As DataTable = adapter.GetData()
+        table.DefaultView.RowFilter = "Date = " & GameDate
+
+        Return table
     End Function
 
 

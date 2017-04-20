@@ -30,6 +30,8 @@ Partial Class AddGame
         Me.cboPlace = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.cboTeam1 = New System.Windows.Forms.ComboBox()
+        Me.GameBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GameInformationDataSet = New Final_Project.GameInformationDataSet()
         Me.cboTeam2 = New System.Windows.Forms.ComboBox()
         Me.dtpAddDate = New System.Windows.Forms.DateTimePicker()
         Me.txtHistory = New System.Windows.Forms.TextBox()
@@ -48,11 +50,9 @@ Partial Class AddGame
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.lblStatus = New System.Windows.Forms.Label()
-        Me.GameInformationDataSet = New Final_Project.GameInformationDataSet()
-        Me.GameBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GameTableAdapter = New Final_Project.GameInformationDataSetTableAdapters.GameTableAdapter()
-        CType(Me.GameInformationDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GameBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GameInformationDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -104,9 +104,9 @@ Partial Class AddGame
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(53, 315)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(319, 20)
+        Me.Label5.Size = New System.Drawing.Size(290, 20)
         Me.Label5.TabIndex = 5
-        Me.Label5.Text = "History result(s) of match between 2 teams :"
+        Me.Label5.Text = "Result of Last Match between 2 teams :"
         '
         'cboTeam1
         '
@@ -118,6 +118,16 @@ Partial Class AddGame
         Me.cboTeam1.Size = New System.Drawing.Size(172, 28)
         Me.cboTeam1.TabIndex = 6
         Me.cboTeam1.ValueMember = "Date"
+        '
+        'GameBindingSource
+        '
+        Me.GameBindingSource.DataMember = "Game"
+        Me.GameBindingSource.DataSource = Me.GameInformationDataSet
+        '
+        'GameInformationDataSet
+        '
+        Me.GameInformationDataSet.DataSetName = "GameInformationDataSet"
+        Me.GameInformationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'cboTeam2
         '
@@ -171,7 +181,7 @@ Partial Class AddGame
         '
         Me.txtBest2.Location = New System.Drawing.Point(547, 256)
         Me.txtBest2.Name = "txtBest2"
-        Me.txtBest2.Size = New System.Drawing.Size(208, 26)
+        Me.txtBest2.Size = New System.Drawing.Size(203, 26)
         Me.txtBest2.TabIndex = 13
         '
         'btnAdd
@@ -269,16 +279,6 @@ Partial Class AddGame
         Me.lblStatus.Size = New System.Drawing.Size(777, 28)
         Me.lblStatus.TabIndex = 24
         '
-        'GameInformationDataSet
-        '
-        Me.GameInformationDataSet.DataSetName = "GameInformationDataSet"
-        Me.GameInformationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'GameBindingSource
-        '
-        Me.GameBindingSource.DataMember = "Game"
-        Me.GameBindingSource.DataSource = Me.GameInformationDataSet
-        '
         'GameTableAdapter
         '
         Me.GameTableAdapter.ClearBeforeFill = True
@@ -315,8 +315,8 @@ Partial Class AddGame
         Me.Controls.Add(Me.Label1)
         Me.Name = "AddGame"
         Me.Text = "Add New Game"
-        CType(Me.GameInformationDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GameBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GameInformationDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
