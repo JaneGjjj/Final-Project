@@ -30,9 +30,6 @@ Partial Class SearchByDate
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.lblStatus = New System.Windows.Forms.Label()
-        Me.GameInformationDataSet = New Final_Project.GameInformationDataSet()
-        Me.GameBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.GameTableAdapter = New Final_Project.GameInformationDataSetTableAdapters.GameTableAdapter()
         Me.DateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LocationDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Team1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -42,9 +39,12 @@ Partial Class SearchByDate
         Me.HistoryResultBetween2TeamsDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TodayWinnerDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TodayResultDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GameBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GameInformationDataSet = New Final_Project.GameInformationDataSet()
+        Me.GameTableAdapter = New Final_Project.GameInformationDataSetTableAdapters.GameTableAdapter()
         CType(Me.dgvGamesInDay, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GameInformationDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GameBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GameInformationDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dtpGameDay
@@ -112,20 +112,6 @@ Partial Class SearchByDate
         Me.lblStatus.Size = New System.Drawing.Size(597, 33)
         Me.lblStatus.TabIndex = 7
         '
-        'GameInformationDataSet
-        '
-        Me.GameInformationDataSet.DataSetName = "GameInformationDataSet"
-        Me.GameInformationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'GameBindingSource
-        '
-        Me.GameBindingSource.DataMember = "Game"
-        Me.GameBindingSource.DataSource = Me.GameInformationDataSet
-        '
-        'GameTableAdapter
-        '
-        Me.GameTableAdapter.ClearBeforeFill = True
-        '
         'DateDataGridViewTextBoxColumn
         '
         Me.DateDataGridViewTextBoxColumn.DataPropertyName = "Date"
@@ -189,6 +175,20 @@ Partial Class SearchByDate
         Me.TodayResultDataGridViewTextBoxColumn.Name = "TodayResultDataGridViewTextBoxColumn"
         Me.TodayResultDataGridViewTextBoxColumn.ReadOnly = True
         '
+        'GameBindingSource
+        '
+        Me.GameBindingSource.DataMember = "Game"
+        Me.GameBindingSource.DataSource = Me.GameInformationDataSet
+        '
+        'GameInformationDataSet
+        '
+        Me.GameInformationDataSet.DataSetName = "GameInformationDataSet"
+        Me.GameInformationDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'GameTableAdapter
+        '
+        Me.GameTableAdapter.ClearBeforeFill = True
+        '
         'SearchByDate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -204,8 +204,8 @@ Partial Class SearchByDate
         Me.Name = "SearchByDate"
         Me.Text = "Search By Date"
         CType(Me.dgvGamesInDay, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GameInformationDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GameBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GameInformationDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

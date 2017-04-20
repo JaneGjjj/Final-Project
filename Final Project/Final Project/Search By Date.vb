@@ -23,8 +23,16 @@
 
         If Not formload Then
             Dim selectdate As Date = CDate(dtpGameDay.Value)
-            dgvGamesInDay.DataSource = mGame.GetbyDate(GameDate)
+            dgvGamesInDay.DataSource = mGame.Items
         End If
+
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+
+        dtpGameDay.Value = Today
+        dgvGamesInDay.DataSource = mGame.Items
+
 
     End Sub
 End Class
