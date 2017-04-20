@@ -23,22 +23,33 @@ Partial Class SupportRate
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.SuspendLayout()
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(550, 448)
+        Me.btnBack.Location = New System.Drawing.Point(833, 608)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(215, 42)
         Me.btnBack.TabIndex = 1
         Me.btnBack.Text = "Back To HomePage"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Location = New System.Drawing.Point(52, 38)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(972, 527)
+        Me.GroupBox1.TabIndex = 2
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Teams Support Rate"
+        '
         'SupportRate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(802, 523)
+        Me.ClientSize = New System.Drawing.Size(1077, 691)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnBack)
         Me.Name = "SupportRate"
         Me.Text = "Support Rate"
@@ -47,4 +58,5 @@ Partial Class SupportRate
     End Sub
 
     Private WithEvents btnBack As Button
+    Friend WithEvents GroupBox1 As GroupBox
 End Class
