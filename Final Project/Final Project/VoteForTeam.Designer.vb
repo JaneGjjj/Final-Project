@@ -22,6 +22,7 @@ Partial Class VoteForTeam
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnSupportRate = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
@@ -33,19 +34,21 @@ Partial Class VoteForTeam
         Me.radIta = New System.Windows.Forms.RadioButton()
         Me.radSwi = New System.Windows.Forms.RadioButton()
         Me.grpTeams = New System.Windows.Forms.GroupBox()
-        Me.radK = New System.Windows.Forms.RadioButton()
-        Me.radAu = New System.Windows.Forms.RadioButton()
-        Me.radRu = New System.Windows.Forms.RadioButton()
-        Me.radPo = New System.Windows.Forms.RadioButton()
-        Me.radRe = New System.Windows.Forms.RadioButton()
-        Me.radNig = New System.Windows.Forms.RadioButton()
-        Me.radNether = New System.Windows.Forms.RadioButton()
-        Me.radBra = New System.Windows.Forms.RadioButton()
-        Me.radCamer = New System.Windows.Forms.RadioButton()
-        Me.radSp = New System.Windows.Forms.RadioButton()
         Me.radAr = New System.Windows.Forms.RadioButton()
+        Me.radSp = New System.Windows.Forms.RadioButton()
+        Me.radCamer = New System.Windows.Forms.RadioButton()
+        Me.radBra = New System.Windows.Forms.RadioButton()
+        Me.radNether = New System.Windows.Forms.RadioButton()
+        Me.radNig = New System.Windows.Forms.RadioButton()
+        Me.radRe = New System.Windows.Forms.RadioButton()
+        Me.radPo = New System.Windows.Forms.RadioButton()
+        Me.radRu = New System.Windows.Forms.RadioButton()
+        Me.radAu = New System.Windows.Forms.RadioButton()
+        Me.radK = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.errProvider = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.grpTeams.SuspendLayout()
+        CType(Me.errProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnSupportRate
@@ -173,104 +176,16 @@ Partial Class VoteForTeam
         Me.grpTeams.TabStop = False
         Me.grpTeams.Text = "Teams"
         '
-        'radK
+        'radAr
         '
-        Me.radK.AutoSize = True
-        Me.radK.Location = New System.Drawing.Point(27, 394)
-        Me.radK.Name = "radK"
-        Me.radK.Size = New System.Drawing.Size(76, 24)
-        Me.radK.TabIndex = 15
-        Me.radK.TabStop = True
-        Me.radK.Text = "Korea"
-        Me.radK.UseVisualStyleBackColor = True
-        '
-        'radAu
-        '
-        Me.radAu.AutoSize = True
-        Me.radAu.Location = New System.Drawing.Point(310, 32)
-        Me.radAu.Name = "radAu"
-        Me.radAu.Size = New System.Drawing.Size(96, 24)
-        Me.radAu.TabIndex = 16
-        Me.radAu.TabStop = True
-        Me.radAu.Text = "Australia"
-        Me.radAu.UseVisualStyleBackColor = True
-        '
-        'radRu
-        '
-        Me.radRu.AutoSize = True
-        Me.radRu.Location = New System.Drawing.Point(310, 106)
-        Me.radRu.Name = "radRu"
-        Me.radRu.Size = New System.Drawing.Size(83, 24)
-        Me.radRu.TabIndex = 17
-        Me.radRu.TabStop = True
-        Me.radRu.Text = "Russia"
-        Me.radRu.UseVisualStyleBackColor = True
-        '
-        'radPo
-        '
-        Me.radPo.AutoSize = True
-        Me.radPo.Location = New System.Drawing.Point(310, 176)
-        Me.radPo.Name = "radPo"
-        Me.radPo.Size = New System.Drawing.Size(93, 24)
-        Me.radPo.TabIndex = 18
-        Me.radPo.TabStop = True
-        Me.radPo.Text = "Portugal"
-        Me.radPo.UseVisualStyleBackColor = True
-        '
-        'radRe
-        '
-        Me.radRe.AutoSize = True
-        Me.radRe.Location = New System.Drawing.Point(310, 255)
-        Me.radRe.Name = "radRe"
-        Me.radRe.Size = New System.Drawing.Size(145, 24)
-        Me.radRe.TabIndex = 19
-        Me.radRe.TabStop = True
-        Me.radRe.Text = "Czech Republic"
-        Me.radRe.UseVisualStyleBackColor = True
-        '
-        'radNig
-        '
-        Me.radNig.AutoSize = True
-        Me.radNig.Location = New System.Drawing.Point(310, 326)
-        Me.radNig.Name = "radNig"
-        Me.radNig.Size = New System.Drawing.Size(83, 24)
-        Me.radNig.TabIndex = 20
-        Me.radNig.TabStop = True
-        Me.radNig.Text = "Nigeria"
-        Me.radNig.UseVisualStyleBackColor = True
-        '
-        'radNether
-        '
-        Me.radNether.AutoSize = True
-        Me.radNether.Location = New System.Drawing.Point(310, 394)
-        Me.radNether.Name = "radNether"
-        Me.radNether.Size = New System.Drawing.Size(112, 24)
-        Me.radNether.TabIndex = 21
-        Me.radNether.TabStop = True
-        Me.radNether.Text = "Netherland"
-        Me.radNether.UseVisualStyleBackColor = True
-        '
-        'radBra
-        '
-        Me.radBra.AutoSize = True
-        Me.radBra.Location = New System.Drawing.Point(565, 34)
-        Me.radBra.Name = "radBra"
-        Me.radBra.Size = New System.Drawing.Size(73, 24)
-        Me.radBra.TabIndex = 22
-        Me.radBra.TabStop = True
-        Me.radBra.Text = "Brazil"
-        Me.radBra.UseVisualStyleBackColor = True
-        '
-        'radCamer
-        '
-        Me.radCamer.AutoSize = True
-        Me.radCamer.Location = New System.Drawing.Point(565, 106)
-        Me.radCamer.Name = "radCamer"
-        Me.radCamer.Size = New System.Drawing.Size(99, 24)
-        Me.radCamer.TabIndex = 23
-        Me.radCamer.TabStop = True
-        Me.radCamer.Text = "Cameron"
-        Me.radCamer.UseVisualStyleBackColor = True
+        Me.radAr.AutoSize = True
+        Me.radAr.Location = New System.Drawing.Point(565, 255)
+        Me.radAr.Name = "radAr"
+        Me.radAr.Size = New System.Drawing.Size(103, 24)
+        Me.radAr.TabIndex = 25
+        Me.radAr.TabStop = True
+        Me.radAr.Text = "Argentina"
+        Me.radAr.UseVisualStyleBackColor = True
         '
         'radSp
         '
@@ -283,16 +198,104 @@ Partial Class VoteForTeam
         Me.radSp.Text = "Spain"
         Me.radSp.UseVisualStyleBackColor = True
         '
-        'radAr
+        'radCamer
         '
-        Me.radAr.AutoSize = True
-        Me.radAr.Location = New System.Drawing.Point(565, 255)
-        Me.radAr.Name = "radAr"
-        Me.radAr.Size = New System.Drawing.Size(103, 24)
-        Me.radAr.TabIndex = 25
-        Me.radAr.TabStop = True
-        Me.radAr.Text = "Argentina"
-        Me.radAr.UseVisualStyleBackColor = True
+        Me.radCamer.AutoSize = True
+        Me.radCamer.Location = New System.Drawing.Point(565, 106)
+        Me.radCamer.Name = "radCamer"
+        Me.radCamer.Size = New System.Drawing.Size(99, 24)
+        Me.radCamer.TabIndex = 23
+        Me.radCamer.TabStop = True
+        Me.radCamer.Text = "Cameron"
+        Me.radCamer.UseVisualStyleBackColor = True
+        '
+        'radBra
+        '
+        Me.radBra.AutoSize = True
+        Me.radBra.Location = New System.Drawing.Point(565, 34)
+        Me.radBra.Name = "radBra"
+        Me.radBra.Size = New System.Drawing.Size(73, 24)
+        Me.radBra.TabIndex = 22
+        Me.radBra.TabStop = True
+        Me.radBra.Text = "Brazil"
+        Me.radBra.UseVisualStyleBackColor = True
+        '
+        'radNether
+        '
+        Me.radNether.AutoSize = True
+        Me.radNether.Location = New System.Drawing.Point(310, 394)
+        Me.radNether.Name = "radNether"
+        Me.radNether.Size = New System.Drawing.Size(112, 24)
+        Me.radNether.TabIndex = 21
+        Me.radNether.TabStop = True
+        Me.radNether.Text = "Netherland"
+        Me.radNether.UseVisualStyleBackColor = True
+        '
+        'radNig
+        '
+        Me.radNig.AutoSize = True
+        Me.radNig.Location = New System.Drawing.Point(310, 326)
+        Me.radNig.Name = "radNig"
+        Me.radNig.Size = New System.Drawing.Size(83, 24)
+        Me.radNig.TabIndex = 20
+        Me.radNig.TabStop = True
+        Me.radNig.Text = "Nigeria"
+        Me.radNig.UseVisualStyleBackColor = True
+        '
+        'radRe
+        '
+        Me.radRe.AutoSize = True
+        Me.radRe.Location = New System.Drawing.Point(310, 255)
+        Me.radRe.Name = "radRe"
+        Me.radRe.Size = New System.Drawing.Size(145, 24)
+        Me.radRe.TabIndex = 19
+        Me.radRe.TabStop = True
+        Me.radRe.Text = "Czech Republic"
+        Me.radRe.UseVisualStyleBackColor = True
+        '
+        'radPo
+        '
+        Me.radPo.AutoSize = True
+        Me.radPo.Location = New System.Drawing.Point(310, 176)
+        Me.radPo.Name = "radPo"
+        Me.radPo.Size = New System.Drawing.Size(93, 24)
+        Me.radPo.TabIndex = 18
+        Me.radPo.TabStop = True
+        Me.radPo.Text = "Portugal"
+        Me.radPo.UseVisualStyleBackColor = True
+        '
+        'radRu
+        '
+        Me.radRu.AutoSize = True
+        Me.radRu.Location = New System.Drawing.Point(310, 106)
+        Me.radRu.Name = "radRu"
+        Me.radRu.Size = New System.Drawing.Size(83, 24)
+        Me.radRu.TabIndex = 17
+        Me.radRu.TabStop = True
+        Me.radRu.Text = "Russia"
+        Me.radRu.UseVisualStyleBackColor = True
+        '
+        'radAu
+        '
+        Me.radAu.AutoSize = True
+        Me.radAu.Location = New System.Drawing.Point(310, 32)
+        Me.radAu.Name = "radAu"
+        Me.radAu.Size = New System.Drawing.Size(96, 24)
+        Me.radAu.TabIndex = 16
+        Me.radAu.TabStop = True
+        Me.radAu.Text = "Australia"
+        Me.radAu.UseVisualStyleBackColor = True
+        '
+        'radK
+        '
+        Me.radK.AutoSize = True
+        Me.radK.Location = New System.Drawing.Point(27, 394)
+        Me.radK.Name = "radK"
+        Me.radK.Size = New System.Drawing.Size(76, 24)
+        Me.radK.TabIndex = 15
+        Me.radK.TabStop = True
+        Me.radK.Text = "Korea"
+        Me.radK.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -305,6 +308,10 @@ Partial Class VoteForTeam
         Me.Label1.Size = New System.Drawing.Size(320, 57)
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Click here to show teams"
+        '
+        'errProvider
+        '
+        Me.errProvider.ContainerControl = Me
         '
         'VoteForTeam
         '
@@ -322,6 +329,7 @@ Partial Class VoteForTeam
         Me.Text = "Vote For Your Team"
         Me.grpTeams.ResumeLayout(False)
         Me.grpTeams.PerformLayout()
+        CType(Me.errProvider, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -349,4 +357,5 @@ Partial Class VoteForTeam
     Friend WithEvents radSp As RadioButton
     Friend WithEvents radAr As RadioButton
     Friend WithEvents Label1 As Label
+    Friend WithEvents errProvider As ErrorProvider
 End Class
